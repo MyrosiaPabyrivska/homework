@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+   <meta charset="utf-8" http-equiv="Content-Script-Type" content="text/javascript">
+   <title>Fun with JS</title> 
+   <script type="text/javascript" src="myJS.js"></script>
+   <link rel="stylesheet" type="text/css" href="myStyle.css">
+ </head> 
+
+<body> 
+<div class="main_menu">
+  <div class="container">
+    <nav >
+        <ul>
+        	<li><a href="#page0"><img src="logo.png" width="40px" height="40px"></a></li>
+            <li><a href="#page1">Personal Information</a></li>
+            <li><a href="#page2">Summary of Qualifications</a></li>
+            <li><a href="#page3">Skills</a></li>
+            <li><a href="#page4">Experience</a></li>
+            <li><a href="#page5">Certification</a></li>
+            <li><a href="#page6">Education</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<div id="page0">
+ 
+ <h2> Hello, let's submit your resume! </h2>
+</div>
+
+<div id="page1">
+   <h3 style="top:20px"> Input your personal information:</h3>
+
+   <div class ="element" >
+   		<label for="name" >Name, Surname:</label><input type="text"  id="name" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="position" >Postion:</label><input type="text" id="position" style="position:absolute; left:250px;" > 
+   </div>
+   <div class ="element" >
+   		<label for="email" >Phone number/email:</label><input type="text" id="email" style="position:absolute; left:250px;" > 
+   </div>
+</div>
+
+<div id="page2">
+	<h3 style="top:20px"> Summmary of Qualifications:</h3>
+    <textarea id="perInfo"rows="4" cols="52px" placeholder="Briefly describe your professional background and skills relevant to this position"></textarea>
+</div>
+
+<div id="page3">
+    <h3 > Skills:</h3>
+    <h4> Programming Languages/ Technologies: </h2>
+    <textarea rows="4" cols="52px" placeholder="C++/Win API/MFC/Visual Basic 6/ADO/ASP/Borland Delphi/ Pascal/Assembler/JavaScript/DHTML/HTML/CSS/Ajax/XML/XSL, Xalan, Saxon processors"></textarea>
+    <h4> Frameworks: </h2>
+    <textarea rows="4" cols="52px" placeholder="Spring/Spring.NET/Spring RCP
+Hibernate/NHibernate/JPA
+Jboss Seam 
+Struts 
+Velocity 
+JUnit 
+XFire Web Services
+Shark Workflow/JRules"></textarea>
+    <h4> Development Tools: </h2>
+    <textarea rows="4" cols="52px" placeholder="Eclipse/MyEclipse/Plug-ins 
+Visual Studio 6/.NET/.NET 2008 + Resharper 
+MSDN 
+Borland Together Architect 
+Microsoft Visio 
+Sparx Enterprise Architect 
+VSS/CVS/Perforce 
+JCoverage/Code Pro/ JUnits/ Log4J/ JProfiler/ Decompiler Tools"></textarea>
+<h4> Application/Web Servers: </h2>
+    <textarea rows="4" cols="52px" placeholder="JBoss 
+Glassfish
+IBM WAS
+JRun
+Tomcat 
+IIS 
+Apache"></textarea>
+ 
+</div>
+
+<div id="page4">
+  <a id="experience"></a>
+    <h3>Experience</h3>
+    <div class ="element" >
+   		<label for="pname" >Project name:</label><input type="text"  id="pname" style="position:absolute; left:250px;" ><br>
+   </div>	
+   <div class ="element" >
+   		<label for="customer" >Customer:</label><input type="text"  id="customer" style="position:absolute; left:250px;" ><br>
+   </div>	
+   <div class ="element" >
+   		<label for="duration" >Involvement Duration:</label><input type="text"  id="duration" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="role" >Project role:</label><input type="text"  id="role" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="resp" >Responsibilities:</label><input type="text"  id="resp" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="ptsize" >Project Team Size:</label><input type="text"  id="ptsize" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="tools" >Tools amd Technologies:</label><input type="text"  id="tools" style="position:absolute; left:250px;" ><br>
+   </div>
+
+</div>
+
+<div id="page5">
+  <h3>Certification:</h3>
+    <div class ="element" >
+   		<label for="cname" >Certification Name:</label><input type="text"  id="cname" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="cyear" >Year:</label><input type="text" id="cyear" style="position:absolute; left:250px;" > 
+   </div>
+</div>
+
+<div id="page6">
+<h3>Education:</h3>
+   <div class ="element" >
+   		<label for="degree" >Degree Received:</label><input type="text"  id="degree" style="position:absolute; left:250px;" ><br>
+   </div>
+   <div class ="element" >
+   		<label for="university" >University Name:</label><input type="text" id="university" style="position:absolute; left:250px;" > 
+   </div>
+   <div class ="element" >
+   		<label for="department" >Department:</label><input type="text" id="department" style="position:absolute; left:250px;" > 
+   </div>
+   <div class ="element" >
+   		<label for="year" >Graduated in:</label><input type="text" id="year" style="position:absolute; left:250px;" placeholder="Year" > 
+   </div>
+<input  type="button" id="right" value="Submit " style="position:absolute;" onClick="testAllInfo(document.getElementById('name'),document.getElementById('position'),document.getElementById('email'),document.getElementById('degree'),document.getElementById('university'),document.getElementById('department'),document.getElementById('year'));" >
+</div>
+
+</body> 
+</html> 

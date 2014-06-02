@@ -1,0 +1,51 @@
+    div#page1 {height: 650px;}
+    div#page2 {height: 650px;}
+    div#page3 {height: 700px;}
+    div#page4 {height: 650px;}
+    div#page5 {height: 650px;}
+    div#page6 {height: 650px;}
+    div#page0 {height: 650px; text-align: center}
+
+    div#nav {position: fixed; top: 0px;}
+    div.main_menu {      
+      height: 70px;
+      width: 100%;
+      position: fixed;
+      top: -15px;
+      z-index: 999;
+      background: -moz-linear-gradient(right, #336666, #66cccc); 
+    }
+    .container { 
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 1000px;
+    }
+    div.main_menu nav { height: 50px; float:right; width: auto;}
+    div.main_menu nav ul li { 
+      display: inline-block;
+      font: 9px/6.00em "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+      height: 100%;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    div.main_menu nav a { 
+      color: #FFFFFF;
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+    }
+
+    a:hover { color:red;}
+    h2 { 
+      font: 100px "Comic Sans MS", cursive, sans-serif;
+      letter-spacing: -0.01em;
+
+    }
+    h3{ color:blue;}
+    
+    div.element { margin-top: 10px; margin-bottom: 10px; }
+    label#cname { padding-left: 100px; padding-right: 100px; }
+  
